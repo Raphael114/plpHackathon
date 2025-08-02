@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    width: 100%;
+    background: url(../media/background2.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.contact h1 {
+    font-size: 65px;
+    color: rgb(230, 104, 59);
+    text-align: center;
+    margin-top: 0;
+}
+
+.cont p {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+label {
+    font-size: 20px;
+    color: rgb(230, 104, 59);
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input, button {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+input:focus, button:focus {
+    border-color: rgb(230, 104, 59);
+}
+
+input {
+    max-width: fit-content;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(36, 32, 30);
+    color: #fff;
+    padding: 10px 20px;
+    transition: .3s ease;
+}
+
+button:hover {
+    background-color: rgb(230, 104, 59);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+.moreContact p{
+   max-width: 600px;
+   margin-top: 20px;
+   line-height: 20px;
+   font-weight: bold;
+   color: darkslategray;
+   margin-bottom: 10px;
+}
+
+ul li {
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.image {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 30%;
+    height: 60%;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 70%;
+    transform: translate(-50%);
+    bottom: 20px;
+    transition: left 2s ease;
+    mix-blend-mode: multiply;
+}
+
+.image:hover .contact-pic {
+    left: 55%;
+}
